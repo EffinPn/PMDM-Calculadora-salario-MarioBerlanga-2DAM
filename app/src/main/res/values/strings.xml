@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">ActividadMarioBerlanga</string>
+    <string name="cual_es_tu_salario_bruto">¿Cual es tu salario bruto?</string>
+    <string name="en_cuantas_pagas">¿En cuantas pagas?</string>
+    <string name="bienvenido_introduce_tus_datos">Bienvenido, introduce tus datos:</string>
+    <string name="cual_es_tu_edad">¿Cual es tu edad?</string>
+    <string name="salarycalc">SalaryCalc</string>
+    <string name="cual_es_tu_grupo_profesional">¿Cual es tu grupo profesional?</string>
+    <string name="tienes_alguna_discapacidad">¿Tienes alguna discapacidad?</string>
+    <string name="estado_civil">¿Estado civil?</string>
+    <string name="cuantos_hijos_tienes">¿Cuantos hijos tienes?</string>
+    <string name="calcular">Calcular</string>
+    <string name="resultado">Resultado:</string>
+    <string name="salario_neto">Salario neto:</string>
+    <string name="irpf">IRPF:</string>
+    <string name="volver">Volver</string>
+    <string name="deducciones">Deducciones:</string>
+    <string name="salario_bruto">Salario bruto:</string>
+    <string-array name="npagas_opciones">
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
+    <string-array name="grupoprof_opciones">
+        <item>Ingenieros y Licenciados.</item>
+        <item>Ingenieros Técnicos, Peritos y Ayudantes Titulados</item>
+        <item>Jefes Administrativos y de Taller</item>
+        <item>Ayudantes no Titulados</item>
+        <item>Oficiales Administrativos</item>
+        <item>Subalternos</item>
+        <item>Auxiliares Administrativos</item>
+        <item>Oficiales de primera y segunda</item>
+        <item>Oficiales de tercera y Especialistas</item>
+        <item>Peones</item>
+        <item>Trabajadores menores de dieciocho años.</item>
+    </string-array>
+    <string-array name="gradodisc_opciones">
+        <item>No tengo</item>
+        <item>Menor del 65%</item>
+        <item>Mayor del 65%</item>
+    </string-array>
+    <string-array name="estadocivil_opciones">
+        <item>Casado/a</item>
+        <item>Soltero/a</item>
+        <item>Separado/a</item>
+        <item>Divorciado/a</item>
+        <item>Viudo/a</item>
+    </string-array>
+</resources>

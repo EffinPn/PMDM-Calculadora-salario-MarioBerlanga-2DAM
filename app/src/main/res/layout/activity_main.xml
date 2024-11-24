@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul"
+    tools:context=".MainActivity">
+
+    <!--TITULO-->
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/salmon"
+        android:shadowDy="5"
+        android:shadowRadius="1"
+        android:text="@string/salarycalc"
+        android:textColor="@color/amarillo"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.030" />
+
+    <TextView
+        android:id="@+id/bienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/bienvenido_introduce_tus_datos"
+        android:textColor="@color/salmon"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--SALARIO BRUTO-->
+
+    <TextView
+        android:id="@+id/salariotexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/cual_es_tu_salario_bruto"
+        android:textColor="@color/amarillo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/salario"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="208dp"
+        android:background="@color/white"
+        android:ems="6"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!--nPagas-->
+    <TextView
+        android:id="@+id/npagastexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/en_cuantas_pagas"
+        android:textColor="@color/amarillo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/npagas"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="208dp"
+        android:background="@color/white"
+        android:entries="@array/npagas_opciones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Edad-->
+
+    <TextView
+        android:id="@+id/edadtexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="270dp"
+        android:text="@string/cual_es_tu_edad"
+        android:textColor="@color/amarillo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edad"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="298dp"
+        android:background="@color/white"
+        android:ems="6"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Grupo prof-->
+    <TextView
+        android:id="@+id/grupoproftexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="270dp"
+        android:text="@string/cual_es_tu_grupo_profesional"
+        android:textColor="@color/amarillo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/grupoprof"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="298dp"
+        android:background="@color/white"
+        android:entries="@array/grupoprof_opciones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Discapacidad-->
+
+    <TextView
+        android:id="@+id/gradodiscapacidadtexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="360dp"
+        android:text="@string/tienes_alguna_discapacidad"
+        android:textColor="@color/amarillo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/gradodiscapacidad"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="388dp"
+        android:background="@color/white"
+        android:entries="@array/gradodisc_opciones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--Estado civil-->
+
+    <TextView
+        android:id="@+id/estadociviltexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="450dp"
+        android:text="@string/estado_civil"
+        android:textColor="@color/amarillo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/estadocivil"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="478dp"
+        android:background="@color/white"
+        android:entries="@array/estadocivil_opciones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--nHijos-->
+    <TextView
+        android:id="@+id/nhijostexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="540dp"
+        android:text="@string/cuantos_hijos_tienes"
+        android:textColor="@color/amarillo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nhijos"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="568dp"
+        android:background="@color/white"
+        android:ems="6"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="169dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/boton"
+        android:text="@string/calcular"
+        android:textStyle="bold"
+        android:textColor="@color/amarillo"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="169dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/boton"
+        android:text="Reset"
+        android:textColor="@color/amarillo"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--Calcular/Borrar-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
